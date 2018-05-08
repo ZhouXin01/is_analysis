@@ -196,14 +196,14 @@ tb_user表的外键</td>
 ### 2.界面设计
 
 
-![](./book1.PNG)
+![](./user.PNG)
 
 
 ### 3.接口设计
 
 
 3.1 获取用户借阅信息(从数据库获取)
-请求方法：GET  
+请求方式：GET  
 请求参数:  
 <table>
 <tr>
@@ -211,21 +211,8 @@ tb_user表的外键</td>
 </tr>
 
 <tr>
-<td>userName</td><td>是</td><td>用户名</td>
+<td>userID</td><td>是</td><td>ID</td>
 </tr>
-
-<tr>
-<td>action</td><td>是</td><td>getLendInfo</td>
-</tr>
-
-<tr>
-<td>access_token</td><td>是</td><td>验证输入的合法性</td>
-</tr>
-
-<tr>
-<td>method</td><td>是</td><td>GET</td>
-</tr>
-</table>
 
 返回示例:  
 ```
@@ -233,8 +220,9 @@ tb_user表的外键</td>
     "info":"查询成功",
     "data":{ 
         "lendId":"1",
-        "userName":"周鑫",
-        "bookISBN":"979-987-432-243-3",
+        "userID":"20151041",
+        "userName":"周鑫"，      
+        "bookISBN":"979-987-432-243-3",
         "lendTime":"2018-05-03"
     },
     "code":200
