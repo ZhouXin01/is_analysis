@@ -74,9 +74,8 @@
 <tr>
 <td> 字段</td> <td>类型</td> <td> 长度</td>  <td> 允许空值</td> <td> 主键</td><td> 说明</td>
 </tr>
-
 <tr>
-<td> resource_id</td> <td>int</td> <td> 20</td>  <td> 否</td> <td> 是</td><td> 馆藏流水号，自增</td>
+<td> resource_id</td> <td>int</td> <td> 20</td>  <td> 否</td> <td> 是</td><td> 流水号/td>
 </tr>
 <tr>
 <td> resource_ISBN</td> <td>varchar</td> <td> 13</td> <td> 否</td> <td> 外键</td><td> 馆藏资源ISBN，
