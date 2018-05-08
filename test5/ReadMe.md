@@ -54,7 +54,7 @@
 </tr>
 
 <tr>
-<td> book_ISBN</td> <td>varchar</td> <td> 13</td> <td> 否</td> <td> 外键</td><td> 图书ISBN，tb_collection的外键</td>
+<td> book_ISBN</td> <td>varchar</td> <td> 13</td> <td> 否</td> <td> 外键</td><td> 图书ISBN，tb_libraryresource的外键</td>
 </tr>
 <tr>
 <td> book_author</td> <td>varchar</td> <td> 13</td> <td> 否</td> <td> 否</td><td> 作者</td>
