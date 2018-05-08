@@ -50,7 +50,7 @@
 </tr>
 
 <tr>
-<td> book_id</td> <td>int</td> <td> 20</td> <td> 否</td> <td> 是</td><td> 图书ID，自增主键</td>
+<td> book_id</td> <td>int</td> <td> 20</td> <td> 否</td> <td> 是</td><td> 图书ID</td>
 </tr>
 
 <tr>
@@ -111,7 +111,7 @@ tb_libraryresource的外键</td>
 </tr>
 
 <tr>
-<td> user_role</td> <td>int</td> <td> 1</td> <td>0</td> <td> 否</td> <td> 否</td><td> 角色,(默认为1,1：表示普通用户，
+<td> user_role</td> <td>int</td> <td>0</td> <td> 否</td> <td> 否</td><td> 角色,(默认为1,1：表示普通用户，
 2：表示管理员用户)</td>
 </tr>
 <tr>
