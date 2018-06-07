@@ -16,7 +16,7 @@
 ## 2.系统总体结构
 ![系统总体结构](系统总结构.png)
 - 界面设计详见：
-- ### [界面](https://github.com/ZhouXin01/is_analysis/test6/index/index.html)
+- ### [界面](https://github.com/ZhouXin01/is_analysis/blob/master/test6/index/index.html)
 
 ## 3. 用例图设计 [源码](用例图/用例图设计.puml)
 ![](用例图/用例图设计.png '用例图')
