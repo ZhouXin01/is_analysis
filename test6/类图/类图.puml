@@ -1,0 +1,83 @@
+@startuml
+class users{
+  String user_id (用户ID/学生学号)
+  String user_name (用户名/学生姓名)
+  String github_username(github账号名)
+  String password (密码)
+  date change_time(修改时间)
+  Integer web_status(网站状态 0:正常访问 1:地址错误)
+
+}
+class userManage{
+  String creat_user_id (创建用户ID/学生学号)
+  String creat_user_name (创建用户名/学生姓名)
+  String github_username(github账号名)
+  String delete_user_id (删除用户ID/学生学号)
+  String delete_user_name (删除用户名/学生姓名)
+  String delete_github_username(删除github账号名)
+}
+
+class student{
+  String student_id（学号）
+  String user_id (用户ID)
+  String class_id(班级号)
+  float grade_sum(成绩汇总)
+  bool web_sum （网站正确与否汇总）
+}
+class teachers{
+String teacher_id (老师工号)
+String department (老师所属部门)
+}
+class admin{
+bool isAdmin =true(是否为管理员)
+}
+class courses {
+    String course_id(课程号)
+    String course_name (课程名)
+   String  date (开课学年)
+   String  term (开课学期)
+   String  college (开课学院)
+   float   credit (学分)
+
+}
+
+class arrangeInfo{
+   string arrangeInfo_id (老师任课编号)
+   string course_id(课程号)
+   string teacher_id(授课老师工号)
+   string place (上课地点)
+   string num (上课人数)
+}
+class courseInfo{
+   String courseInfo_id(学生上课编号)
+    String arrangeInfo_id(老师任课编号)
+    String student_id (学号)
+
+}
+class tests{
+  String test_id(实验编号)
+  String test_title(实验名称)
+  String test_content(实验要求)
+}
+class grades{
+  String student_id(学号)
+  String test_id(实验编号)
+  float grade(成绩)
+  String memo(实验评价)
+  date create_time(批改时间)
+  date update_time(修改时间)
+}
+student --|> users
+admin --|> users
+admin --|> userManage
+teachers --|> admin
+student "1"--"n" grades
+teachers "1"--"n" grades
+tests "n"--"n" grades
+teachers "1"--"n" tests
+student "1"--"n" tests
+courses "1"--"n" arrangeInfo
+arrangeInfo "1"--"1" teachers
+arrangeInfo "1"--"n" courseInfo
+student "n"--"n" courseInfo
+@enduml

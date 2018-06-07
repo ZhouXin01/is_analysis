@@ -1,0 +1,42 @@
+@startuml
+title 基于Github的实验平台--用例图
+actor admin
+actor users
+actor 学生
+actor 老师
+admin<|---老师
+users<|---学生
+admin-|>users
+
+package 用户用例集{
+  usecase 用户个人信息修改
+  usecase 用户个人信息查看
+  usecase 登录
+  usecase 登出
+  usecase 添加用户
+  usecase 删除用户
+  users-up-->用户个人信息修改
+  users-up-->用户个人信息查看
+  users-up-->登录
+  users-up-->登出
+  admin-up-->添加用户
+  admin-up-->删除用户
+}
+package 业务用例集{
+  usecase 评定与修改成绩
+  usecase 学生列表
+  usecase 查看成绩
+  usecase 学生查询
+  usecase 查看实验
+  usecase 发布与修改实验
+  老师--->评定与修改成绩
+  老师--->学生列表
+  老师--->学生查询
+  老师--->查看实验
+  老师--->发布与修改实验
+  学生--->查看成绩
+  学生--->学生列表
+  学生--->学生查询
+  学生--->查看实验
+}
+@enduml
