@@ -14,9 +14,9 @@
       "total": 30,
       "data": [
           {
-            "student_id":"201510414325",
-            "student_name":"张文",
-            "class_name":"软件三班",
+            "student_id":"201510414229",
+            "student_name":"周鑫",
+            "class_name":"软件二班",
             "github_name":"Anntly",
             "update_time":"2018.06.02",
             "grade_p":"ABBBBA",
