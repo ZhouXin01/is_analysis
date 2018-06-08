@@ -26,10 +26,10 @@
         {         
             "status": true,
             "info": null,    
-            "student_id": "201510315203",
-            "github_username": "chinajuedui",
-            "class": "软件(本)15-1",
-            "name": "陈松华",
+            "student_id": "2015104229",
+            "github_username": "ZhouXin01",
+            "class": "软件(本)15-2",
+            "name": "周鑫",
             "total": 6,
             "avgresult":90.5,       
             "data": [
